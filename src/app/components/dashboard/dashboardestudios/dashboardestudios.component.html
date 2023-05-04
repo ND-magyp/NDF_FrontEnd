@@ -95,6 +95,15 @@
                         <input type="text" class="form-control" id="anio" formControlName="anio" name=""
                             placeholder="Ej: 2023">
                     </div>
+                     <!-- Control formato -->
+                        <div *ngIf="Anio?.errors && Anio?.touched">
+                            <p *ngIf="Anio?.hasError('required')" class="errores">
+                                Campo requerido.
+                            </p>
+                            <p *ngIf="Anio?.errors?.['minlength']" class="errores">
+                                Debe ser de 4 caracteres.
+                            </p>
+                        </div>
 
                     <div class="modal-footer">
                         <button type="button" (click)="guardarItem()" class="btn btn-dark" data-bs-dismiss="modal"
@@ -107,4 +116,4 @@
         </div>
     </div>
 </div>
-<!-- Fin Modal Estudio -->
+<!-- Fin Modal Estudios -->

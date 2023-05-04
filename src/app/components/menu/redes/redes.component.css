@@ -1,6 +1,6 @@
 .redes a {
   align-items: center;
-  display: flex;
+  display:flex;
   position: relative;
   text-decoration: none;
   justify-content: space-between;

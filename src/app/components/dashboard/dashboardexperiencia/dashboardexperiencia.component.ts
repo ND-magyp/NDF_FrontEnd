@@ -29,7 +29,7 @@ export class DashboardexperienciaComponent implements OnInit {
       id: [''],
       empresa: ['', [Validators.required, Validators.minLength(3)]],
       puesto: ['', [Validators.required, Validators.minLength(3)]],
-      inicio: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(4)]],
+      inicio: ['', [Validators.required, Validators.minLength(4)]],
       fin: [''],
     });
   }
@@ -134,7 +134,7 @@ export class DashboardexperienciaComponent implements OnInit {
   }
        
   limpiar() {
-    console.log("Se reinicio");
+    console.log("Se reinició");
     this.form.reset();
   }
 

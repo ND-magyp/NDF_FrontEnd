@@ -15,8 +15,9 @@ El portfolio web se encuentra en: https://portfoliondf.web.app/index
 
 ## Contenido y funcionamiento:
 
-Contiene la página  principal de acceso público  y la página dashboard que se habilita con usuario y contraseña.
-Se puede realizar CRUD de los datos que se muestran en el CV.
+Contiene la página principal de acceso público y la página dashboard que se habilita con usuario y contraseña. 
+Se puede realizar CRUD de los datos que se muestran en el CV. Se puede descargar version PDF.
+
 Se desplegó en Firebase.
 
 El contenido del portfolio puede verse haciendo scroll o a traves del menu de secciones.

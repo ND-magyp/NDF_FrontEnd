@@ -130,7 +130,7 @@ export class DashboardestudiosComponent implements OnInit {
   }
        
   limpiar() {
-    console.log("Se reinicio");
+    console.log("Se reinició");
     this.form.reset();
   }
 

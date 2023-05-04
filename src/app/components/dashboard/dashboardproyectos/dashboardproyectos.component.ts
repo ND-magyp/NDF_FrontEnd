@@ -27,8 +27,8 @@ export class DashboardproyectosComponent implements OnInit {
   {   
     this.form = this.formBuilder.group({
       id: [''],
-            logo_proyecto: [''],
-            url_proyecto: [''],
+      logo_proyecto: [''],
+      url_proyecto: [''],
       titulo_proyecto: ['', [Validators.required, Validators.minLength(3)]],
       descripcion: ['', [Validators.required, Validators.minLength(8)]],
 
@@ -127,7 +127,7 @@ export class DashboardproyectosComponent implements OnInit {
   }
        
   limpiar() {
-    console.log("Se reinicio");
+    console.log("Se reinició");
     this.form.reset();
   }
 

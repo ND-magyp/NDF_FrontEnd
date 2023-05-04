@@ -21,7 +21,7 @@
     border-color: #e5deef;
     background: #eeeeee;
 }
-.item-skill{
+/*.item-skill{
 	width: 100%;
 	float: left;
 	list-style-type: none;
@@ -51,12 +51,14 @@
     --bs-progress-bar-bg: #0f47e2!important;
     font-weight: bold;
 }
-.nuevo{
-    width: 8rem;
-    margin-top: 1rem;
-}
+
 .volver{
     float: right;
+    margin-top: 1rem;
+}*/
+
+.nuevo{
+    width: 8rem;
     margin-top: 1rem;
 }
 /* Fin Skills*/

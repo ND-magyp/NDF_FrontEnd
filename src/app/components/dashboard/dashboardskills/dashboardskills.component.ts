@@ -26,8 +26,8 @@ export class DashboardskillsComponent implements OnInit {
   ) {
     this.form = this.formBuilder.group({
       id: [''],
-      nombre: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
-      porcentaje: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(3)]],
+      nombre: ['', [Validators.required, Validators.minLength(2)]],
+      porcentaje: ['', [Validators.required, Validators.minLength(2)]],
       color: ['', [Validators.required]],
       ico_font: ['', [Validators.required]],
       titulo: ['', [Validators.required]],
@@ -62,11 +62,11 @@ export class DashboardskillsComponent implements OnInit {
     return this.form.get("ico_font");
   }
 
-  get ico_fontInvalido() {
+  get Ico_fontInvalido() {
     return this.Ico_font?.errors && this.Ico_font?.touched;
   }
 
-  get ico_fontValido() {
+  get Ico_fontValido() {
     return !this.Ico_font?.errors && this.Ico_font?.touched;
   }
 
@@ -154,7 +154,7 @@ export class DashboardskillsComponent implements OnInit {
   }
 
   limpiar() {
-    console.log("Se reinicio");
+    console.log("Se reinició");
     this.form.reset();
   }
 
