@@ -20,7 +20,7 @@ export class AcercademiComponent implements OnInit {
   ngOnInit(): void {
     this.cargarItem();
   }
- // Dejo o no?
+ 
   cargarItem(){
     this.servicio.getById(1).subscribe({
         next: (data) => {

@@ -17,9 +17,9 @@ export class LoginComponent implements OnInit {
 
   persona: Persona = new Persona("", "", "", "", "", "", "", "", "", "", "");
 
-  //Inyecta el formBuilder en el constructor
+  
   constructor(private formBuilder: FormBuilder, private autenticarService: AutenticacionService, private ruta: Router) {
-  //Controles formulario de login
+  
     this.form = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(8)]],
@@ -68,7 +68,7 @@ export class LoginComponent implements OnInit {
       this.autenticarService.loginUser(this.form.value).subscribe(data => {
         console.log("DATA: " + JSON.stringify(data.id));
         if (data.id) {
-          //alert("Podes editar el portfolio");
+          ;
           this.ruta.navigate(['dashboard']);
         } else {
           alert("Error de inició sesión");

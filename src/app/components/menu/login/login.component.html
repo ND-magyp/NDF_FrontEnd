@@ -11,7 +11,7 @@
                 <input type="email" class="form-control" formControlName="email" placeholder="email@dominio.com"
                     [ngClass]="{'is-invalid': MailInvalido, 'is-valid': MailValido}">
 
-                <!-- Verificacion del formato de email -->
+                <!-- Verificacion email -->
                 <div *ngIf="Mail?.errors && Mail?.touched">
                     <p *ngIf="Mail?.hasError('required')" class="errores">
                         El email es requerido.

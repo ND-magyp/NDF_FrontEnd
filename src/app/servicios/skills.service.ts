@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-//Esto es para suscribirse 
+
 import { Observable } from 'rxjs';
-//Esto es para hacer peticiones
+
 import { HttpClient } from "@angular/common/http";
 import { Skills } from '../entidades/Skills';
 

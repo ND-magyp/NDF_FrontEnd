@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-//Esto es para suscribirse y que se reciba respuesta de forma asincrónica
+
 import { BehaviorSubject, map, Observable } from 'rxjs';
-//Esto es para poder hacer peticiones
+
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 @Injectable({

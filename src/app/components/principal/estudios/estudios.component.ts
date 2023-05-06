@@ -8,11 +8,11 @@ import { EstudiosService } from 'src/app/servicios/estudios.service';
   styleUrls: ['./estudios.component.css']
 })
 export class EstudiosComponent implements OnInit {
-  //Crear e Inicializar variables de instancia para almacenar los datos que trae Servicio
+
   estudios: Estudios[]=[];
 
   constructor(
-  // Inyecta servicio para tener acceso en la clase a los metodos
+
     private servicio: EstudiosService,
     ) { }
 
@@ -21,7 +21,7 @@ export class EstudiosComponent implements OnInit {
       this.estudios=data;
     });
   }
- // Almacena en variable instancia los datos que trae el servicio
+
   ngOnInit(): void {
     this.listarItems();
   }
