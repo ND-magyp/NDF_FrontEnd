@@ -4,7 +4,7 @@
     <h2 class="col-12 col-md-6 text-md-start text-center text-black text-capitalize my-5 px-md-5">Proyectos</h2>
   </div>
   <div class="proyectos center-h center-v col sm-12 section" *ngFor="let item of proyectos">
-    
+        <div class="card border-dark col-11 col-lg-8 mb-4">
       <div class="col-sm-12 cont-img">
         <img class="card-img" [src]="item.logo_proyecto" alt="Foto">
       </div>
@@ -15,6 +15,7 @@
           <a [href]="item.url_proyecto" target=_blank class="btn btn-dark">Página
             Web </a>
         </div>
+      </div>
       </div>
     </div>
 </section>
